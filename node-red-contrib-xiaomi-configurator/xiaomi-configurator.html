@@ -13,6 +13,7 @@
             var node = this;
 
             var tw_sensor_ht = {value:"sensor_ht", label:"sensor ht", icon:"icons/node-red-contrib-xiaomi-devices/sensor-ht-tw-icon.png"};
+            var tw_sensor_htp = {value:"sensor_htp", label:"sensor htp", icon:"icons/node-red-contrib-xiaomi-devices/sensor-htp-tw-icon.png"};
             var tw_magnet = {value:"magnet", label:"contact", icon:"icons/node-red-contrib-xiaomi-devices/magnet-tw-icon.png"};
             var tw_motion = {value:"motion", label:"motion", icon:"icons/node-red-contrib-xiaomi-devices/motion-tw-icon.png"};
             var tw_plug = {value:"plug", label:"plug", icon:"icons/node-red-contrib-xiaomi-devices/plug-tw-icon.png"};
@@ -29,7 +30,7 @@
                     var sid = $('<input/>',{id:"node-config-input-sid-"+i,type:"text", placeholder:"SID", style:"width:auto;vertical-align:top"}).appendTo(row);
                     sid.typedInput({
                         default: 'sensor_ht',
-                        types: [tw_sensor_ht, tw_magnet, tw_motion, tw_plug, tw_switch]
+                        types: [tw_sensor_ht, tw_sensor_htp, tw_magnet, tw_motion, tw_plug, tw_switch]
                     });
 
                     $('<label/>',{for:"node-config-input-desc-"+i, style:"margin-left: 7px; width: 20px;vertical-align:middle"}).html('<i class="fa fa-pencil-square-o"></i>').appendTo(row);
@@ -98,6 +99,7 @@
     <p>At the moment the following devices are supported:
     <lu>
         <li>Humidity & Temperature sensor [sensor ht]</li>
+        <li>Humidity, Temperature & Pressure sensor [sensor htp]</li>
         <li>Body motion sensor [motion]</li>
         <li>Magnet contact sensor [contact]</li>
         <li>Wall socket plug (zigbee) [plug]</li>

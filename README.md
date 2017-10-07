@@ -5,6 +5,7 @@ This module contains the following nodes to provide easy integration of the Xiao
 The following devices are currently supported:
 
 * Temperature/humidity sensor
+* Temperature/humidity/pressure sensor
 * Magnet switch
 * Button switch
 * Motion sensor
